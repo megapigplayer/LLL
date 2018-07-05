@@ -3,6 +3,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
 import time
+import os
 
 client = discord.Client ()
 Client = commands.Bot (command_prefix = "+")
