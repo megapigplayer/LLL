@@ -17,7 +17,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('+info'):
+	if message.content.startswith('+info'):
         await client.send_message(message.channel, """Hello! My name is MegaBot!
 I have 3 types of commands:
 **Information Commands**
@@ -64,8 +64,9 @@ __**Staff Commands**__
 
     if message.content.startswith('תצעק'):
         await client.send_message(message.channel, "האהאהאההאהאהאהאהאהאהאהאאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאאהאההאהההאהאהאהאהאהאאהאהאהאהאהאהאאהאאאהאאאהאהאהאאהאההאהאאההאהאאהאהאהאהאאהאהאהאהאהאהאהאאהאהאהאהאהאאהאהאהאהאהאהאאהאהאהאהאאהאהאהאהאאהאהאהאהאהאהאהאהאההאההאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאהאהאאהאהאהאהאההאאהאהאהאהאהאהאהאהאהאהאאהאהאהאהאאההאאהאהאהאהאהאהאהאהאהאאאהאהאהאהאהאהאהאהאהאהה")
+
+	await Client.process_commands(message)
     
-    await Client.process_commands(message)
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
