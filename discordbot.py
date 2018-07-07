@@ -34,7 +34,6 @@ __And you can ask him for support!__""")
         await bot.process_commands(message)
 	
     if message.content.startswith('+invite'):
-	await bot.process_commands(message)
         await client.send_message(message.channel, """https://discordapp.com/api/oauth2/authorize?client_id=459490391146627073&permissions=8&scope=bot
 __You Can Invite Me When Ever You Want!__
 You Can Help If You Say Bugs To My Creator- **MegaPig#1576**""")
