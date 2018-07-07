@@ -10,15 +10,13 @@ Client = commands.Bot (command_prefix = "+")
 Client.remove_command("help")
 
 
-
-
 @client.event
 async def on_ready():
     await client.change_presence(game=discord.Game(name="+help | By MegaPig"))
     print("Bot Is Ready")
 
 @Client.command()
-async def help():
+async def ded():
     await Client.say("L")
     
 client.run(os.getenv('TOKEN'))
