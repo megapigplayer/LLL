@@ -63,8 +63,8 @@ __**Staff Commands**__
     if message.content.startswith('תצעק'):
         await client.send_message(message.channel, "האהאהאההאהאהאהאהאהאהאהאאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאאהאההאהההאהאהאהאהאהאאהאהאהאהאהאהאאהאאאהאאאהאהאהאאהאההאהאאההאהאאהאהאהאהאאהאהאהאהאהאהאהאאהאהאהאהאהאאהאהאהאהאהאהאאהאהאהאהאאהאהאהאהאאהאהאהאהאהאהאהאהאההאההאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאהאהאאהאהאהאהאההאאהאהאהאהאהאהאהאהאהאהאאהאהאהאהאאההאאהאהאהאהאהאהאהאהאהאאאהאהאהאהאהאהאהאהאהאהה")
 
-    if message.content.startswith('+mute'):
-	async def mute(ctx, member: discord.Member):
+@Client.command(pass_context = True)
+async def mute(ctx, member: discord.Member):
      if ctx.message.author.server_permissions.mute_members or ctx.message.author.id == '194151340090327041':
         role = discord.utils.get(member.server.roles, name='Muted')
         await Client.add_roles(member, role)
