@@ -7,6 +7,9 @@ import os
 
 client = discord.Client ()
 Client = commands.Bot (command_prefix = "+")
+Client.remove_command("help")
+
+
 
 
 @client.event
