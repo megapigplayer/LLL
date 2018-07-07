@@ -62,11 +62,9 @@ __**Staff Commands**__
 **+ban** @TAG - ban member (ban members permission)
 """, color=0xe88af4)
         await client.send_message(message.channel, embed=embed)
-	await bot.process_commands(message)
 
     if message.content.startswith('תצעק'):
         await client.send_message(message.channel, "האהאהאההאהאהאהאהאהאהאהאאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאאהאההאהההאהאהאהאהאהאאהאהאהאהאהאהאאהאאאהאאאהאהאהאאהאההאהאאההאהאאהאהאהאהאאהאהאהאהאהאהאהאאהאהאהאהאהאאהאהאהאהאהאהאאהאהאהאהאאהאהאהאהאאהאהאהאהאהאהאהאהאההאההאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאהאהאאהאהאהאהאההאאהאהאהאהאהאהאהאהאהאהאאהאהאהאהאאההאאהאהאהאהאהאהאהאהאהאאאהאהאהאהאהאהאהאהאהאהה")
-	await bot.process_commands(message)
 
 
 @Client.command(pass_context = True)
