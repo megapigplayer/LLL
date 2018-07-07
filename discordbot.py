@@ -17,7 +17,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    await bot.process_commands(message)
+    await Client.process_commands(message)
     if message.content.startswith('+info'):
         await client.send_message(message.channel, """Hello! My name is MegaBot!
 I have 3 types of commands:
@@ -25,13 +25,13 @@ I have 3 types of commands:
 **General Commands**
 **Staff Commands**
 For see all the commands type: __+help__""")
-        await bot.process_commands(message)
+        await Client.process_commands(message)
 
     if message.content.startswith('+creator'):
         await client.send_message(message.channel, """**My Creator Is MegaPig#1576!**
 __If you see bug in the bot say to him!__
 __And you can ask him for support!__""")
-        await bot.process_commands(message)
+        await Client.process_commands(message)
 	
     if message.content.startswith('+invite'):
         await client.send_message(message.channel, """https://discordapp.com/api/oauth2/authorize?client_id=459490391146627073&permissions=8&scope=bot
