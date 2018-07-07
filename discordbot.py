@@ -17,7 +17,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	if message.content.startswith('+info'):
+    if message.content.startswith('+info'):
         await client.send_message(message.channel, """Hello! My name is MegaBot!
 I have 3 types of commands:
 **Information Commands**
