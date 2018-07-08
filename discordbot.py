@@ -149,7 +149,12 @@ For see all the commands type: __+help__""")
 
 @Client.command()
 async def creator():
-	embed.add_field(name="----", value="[invite me](https://discordapp.com/api/oauth2/authorize?client_id=459490391146627073&permissions=8&scope=bot)")
+	embed = discord.Embed(title="My Creator Is MegaPig!", description="""
+__Thank you for invite me to your server!__
+you can help if you say bugs to my creator:
+**MegaPig#1576!**
+""", color=0xe88af4)
+        await Client.say(embed=embed)
 
 @Client.command()
 async def invite():
