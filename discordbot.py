@@ -153,7 +153,7 @@ async def creator():
         await Client.say("""**My Creator Is MegaPig#1576!**
 __If you see bug in the bot say to him!__
 __And you can ask him for support!__""")
-        await Clinet.add_reaction("🍪")
+        await client.add_reaction("🍪")
 
 @Client.command()
 async def invite():
