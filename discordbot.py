@@ -128,12 +128,8 @@ async def removewarn(ctx, member: discord.Member):
         await Client.remove_roles(member, role)
 	
 @Client.command()
-async def say(*args):
-	output = ""
-	for word inargs:
-		output += word
-		output += " "
-	await Client.say(output)
+async def say(output):
+    await Client.say(output)
 
 
 Client.run(os.getenv('TOKEN'))
