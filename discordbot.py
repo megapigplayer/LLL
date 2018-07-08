@@ -159,15 +159,21 @@ You Can Help If You Say Bugs To My Creator- **MegaPig#1576**""")
 async def help():
         embed = discord.Embed(title="Command List", description="""
 __**Information Commands**__
-**+info** - Small Information Of The Bot.
+
+**+info** - Small Information of The Bot.
 **+invite** - The Bot Invite Link.
 **+creator** - The Bot Creator.
+
 __**General Commands**__
+
 **+avatar @tag** - The avatar of the member.
 **+servericon** - the picture of the server.
 **+servers** - how many servers the bot in.
-**+question (שאלת כן ולא)** - The Bot answear to you.
+**+question (שאלת כן ולא)** - The Bot answear random to you.
+**+random-tip** - give you random tip.
+
 __**Staff Commands**__
+
 **+warn** @TAG- warn member (move members permission)
 **+mute** @TAG- mute member (mute members permission)
 **+clear (2-100)** - clear messages (manage_messages permission)
