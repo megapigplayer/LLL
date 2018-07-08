@@ -18,7 +18,6 @@ async def on_ready():
 	
 @Client.command(aliases=["cookie"])
 async def cookie(ctx):
-    await Client.say("L")
     await ctx.message.add_reaction(emoji="🍪")
 
 @Client.command(pass_context = True)
@@ -157,7 +156,6 @@ async def creator():
         await Client.say("""**My Creator Is MegaPig#1576!**
 __If you see bug in the bot say to him!__
 __And you can ask him for support!__""")
-        await Client.add_reaction("\U0001F44D")
 
 @Client.command()
 async def invite():
