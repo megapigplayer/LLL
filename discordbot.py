@@ -9,34 +9,8 @@ client = discord.Client ()
 Client = commands.Bot (command_prefix = "+")
 Client.remove_command("help")
 
-
-@client.event
-async def on_ready():
-    await client.change_presence(game=discord.Game(name="+help | By MegaPig"))
-    print("Bot Is Ready")
-
-@client.event
-async def on_message(message):
-    if message.content.startswith('+info'):
-        await client.send_message(message.channel, """Hello! My name is MegaBot!
-I have 3 types of commands:
-**Information Commands**
-**General Commands**
-**Staff Commands**
-For see all the commands type: __+help__""")
-
-    if message.content.startswith('+creator'):
-        await client.send_message(message.channel, """**My Creator Is MegaPig#1576!**
-__If you see bug in the bot say to him!__
-__And you can ask him for support!__""")
-	
-    if message.content.startswith('+invite'):
-        await client.send_message(message.channel, """https://discordapp.com/api/oauth2/authorize?client_id=459490391146627073&permissions=8&scope=bot
-__You Can Invite Me When Ever You Want!__
-You Can Help If You Say Bugs To My Creator- **MegaPig#1576**""")
-
-    if message.content.startswith('+help'):
-        embed = discord.Embed(title="Command List", description="""
+@Client.command()
+async ctx.send embed = discord.Embed(title="Command List", description="""
 __**Information Commands**__
 
 **+info** - Small Information Of The Bot.
@@ -59,9 +33,6 @@ __**Staff Commands**__
 **+ban** @TAG - ban member (ban members permission)
 """, color=0xe88af4)
         await client.send_message(message.channel, embed=embed)
-
-    if message.content.startswith('תצעק'):
-        await client.send_message(message.channel, "האהאהאההאהאהאהאהאהאהאהאאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאאהאההאהההאהאהאהאהאהאאהאהאהאהאהאהאאהאאאהאאאהאהאהאאהאההאהאאההאהאאהאהאהאהאאהאהאהאהאהאהאהאאהאהאהאהאהאאהאהאהאהאהאהאאהאהאהאהאאהאהאהאהאאהאהאהאהאהאהאהאהאההאההאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאהאהאאהאהאהאהאההאאהאהאהאהאהאהאהאהאהאהאאהאהאהאהאאההאאהאהאהאהאהאהאהאהאהאאאהאהאהאהאהאהאהאהאהאהה")
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
