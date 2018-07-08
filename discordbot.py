@@ -134,7 +134,7 @@ async def say(output):
 @Client.command(pass_context=True)
 async def help(ctx):
 	author = ctx.message.author
-        embed = discord.Embed(title="Command List", description="""
+embed = discord.Embed(title="Command List", description="""
 __**Information Commands**__
 
 **+info** - Small Information Of The Bot.
