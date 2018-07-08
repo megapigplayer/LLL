@@ -15,12 +15,6 @@ owner = ["Insert-Owner-ID"]
 async def on_ready():
     print("Bot Is ready!")
 
-@Client.event
-async def on_server_join(ctx):
-author = ctx.message.author
-await client.create_role(author.server, name="Muted")
-
-
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
