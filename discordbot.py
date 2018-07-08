@@ -15,6 +15,13 @@ owner = ["Insert-Owner-ID"]
 async def on_ready():
     print("Bot Is ready!")
 
+@Client.event
+async def on_server_join(ctx):
+guild = ctx.guild
+await guild.create_role(name="Muted")
+
+
+
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
      if ctx.message.author.server_permissions.mute_members or ctx.message.author.id == '194151340090327041':
