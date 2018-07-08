@@ -16,10 +16,10 @@ async def on_ready():
     print("Bot Is ready!")
     await Client.change_status(game=discord.Game(name="+help | By MegaPig"))
 	
-@Client.command()
-async def cookie():
+@Client.command(aliases=["cookie"])
+async def cookie(ctx):
     await Client.say("L")
-    await Client.add_reaction(emoji="🍪")
+    await ctx.message.add_reaction(emoji="🍪")
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
