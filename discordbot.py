@@ -18,7 +18,7 @@ async def on_ready():
 	
 @Client.command()
 async def cookie():
-    await Client say("L")
+    await Client.say("L")
     await Client.add_reaction(emoji="🍪")
 
 @Client.command(pass_context = True)
