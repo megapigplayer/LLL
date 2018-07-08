@@ -171,6 +171,7 @@ __**General Commands**__
 **+servers** - how many servers the bot in.
 **+question (שאלת כן ולא)** - The Bot answear random to you.
 **+randomtip** - give you random tip.
+**+say (מה שבאלך)** - The bot say what you want.
 
 __**Staff Commands**__
 
