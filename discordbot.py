@@ -11,6 +11,9 @@ client = discord.Client ()
 Client = commands.Bot (command_prefix = "+")
 Client.remove_command("help")
 
+@Client.event
+async def on_ready():
+    print("100% ALL IS READY! - MegaBot is now Online!")
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
