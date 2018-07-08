@@ -10,7 +10,7 @@ Client = commands.Bot (command_prefix = "+")
 Client.remove_command("help")
 
 @Client.command()
-async ctx.send(""**Information Commands**__
+async ctx.send(""**Information Commands**
 
 **+info** - Small Information Of The Bot.
 **+invite** - The Bot Invite Link.
