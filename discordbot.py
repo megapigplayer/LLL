@@ -129,10 +129,10 @@ async def removewarn(ctx, member: discord.Member):
 	
 @Client.command()
 async def say(*args):
-	output = ``
+	output = ""
 	for word inargs:
 		output += word
-		output += ``
+		output += " "
 	await Client.say(output)
 
 
