@@ -10,8 +10,7 @@ Client = commands.Bot (command_prefix = "+")
 Client.remove_command("help")
 
 @Client.command()
-async ctx.send embed = discord.Embed(title="Command List", description="""
-__**Information Commands**__
+async ctx.send("""__**Information Commands**__
 
 **+info** - Small Information Of The Bot.
 **+invite** - The Bot Invite Link.
@@ -31,8 +30,7 @@ __**Staff Commands**__
 **+clear (2-100)** - clear messages (manage_messages permission)
 **+kick** @TAG - kick member (kick members permission)
 **+ban** @TAG - ban member (ban members permission)
-""", color=0xe88af4)
-        await client.send_message(message.channel, embed=embed)
+""")
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
