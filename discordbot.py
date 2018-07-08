@@ -198,7 +198,5 @@ async def randomtip(ctx):
 
 	await Client.say(current_response)
 			
-!
 	
-
 Client.run(os.getenv('TOKEN'))
