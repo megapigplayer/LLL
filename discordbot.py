@@ -127,4 +127,4 @@ async def removewarn(ctx, member: discord.Member):
         await Client.remove_roles(member, role)
 
     
-client.run(os.getenv('TOKEN'))
+Client.run(os.getenv('TOKEN'))
