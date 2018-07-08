@@ -17,7 +17,8 @@ async def on_ready():
 
 @Client.event
 async def on_server_join(ctx):
-await Client.create_role(name="Muted")
+author = ctx.message.author
+await client.create_role(author.server, name="Muted")
 
 
 
