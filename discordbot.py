@@ -133,7 +133,7 @@ async def removewarn(ctx, member: discord.Member):
 async def say(output):
     await Client.say(output)
 
-@Client.command
+@Client.command()
 async def game(ouput):
     await Client.change_status(game=discord.Game(name=output))
 	
