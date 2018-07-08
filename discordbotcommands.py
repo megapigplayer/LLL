@@ -66,3 +66,4 @@ __**Staff Commands**__
 
                       
 
+client.run(os.getenv('TOKEN2'))
