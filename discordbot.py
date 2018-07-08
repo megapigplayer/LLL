@@ -170,7 +170,7 @@ __**General Commands**__
 **+servericon** - the picture of the server.
 **+servers** - how many servers the bot in.
 **+question (שאלת כן ולא)** - The Bot answear random to you.
-**+random-tip** - give you random tip.
+**+randomtip** - give you random tip.
 
 __**Staff Commands**__
 
