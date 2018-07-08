@@ -126,6 +126,14 @@ async def removewarn(ctx, member: discord.Member):
      if ctx.message.author.server_permissions.send_messages or ctx.message.author.id == '194151340090327041':
         role = discord.utils.get(member.server.roles, name='instantwarn')
         await Client.remove_roles(member, role)
+	
+@Client.command()
+async def say(*args):
+	output = ` `
+	for word inargs:
+		output += word
+		output += ` `
+	await Client.say(output)
 
-    
+
 Client.run(os.getenv('TOKEN'))
