@@ -157,7 +157,7 @@ __**Staff Commands**__
 **+ban** @TAG - ban member (ban members permission)
 """, color=0xe88af4)
 
-     await client.send_message(message.channel, embed=embed)
+     await Client.send_message(message.channel, embed=embed)
 
 
 
