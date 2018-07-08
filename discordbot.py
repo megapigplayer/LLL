@@ -15,10 +15,6 @@ owner = ["Insert-Owner-ID"]
 async def on_ready():
     print("Bot Is ready!")
     await Client.change_status(game=discord.Game(name="+help | By MegaPig"))
-	
-@Client.command(aliases=["cookie"])
-async def cookie(ctx):
-    await ctx.message.add_reaction(emoji="🍪")
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
