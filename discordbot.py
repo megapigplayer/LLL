@@ -134,7 +134,7 @@ async def say(output):
     await Client.say(output)
 
 @Client.command
-async def say(ouput):
+async def game(ouput):
     await Client.change_status(game=discord.Game(name=output))
 	
 
