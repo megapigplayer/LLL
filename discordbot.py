@@ -13,7 +13,7 @@ Client.remove_command("help")
 
 @Client.event
 async def on_ready():
-    print("100% ALL IS READY! - MegaBot is now Online!")
+    print("MegaBot is now Online!")
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
