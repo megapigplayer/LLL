@@ -183,7 +183,7 @@ async def תצעק():
 @Client.command(pass_context=True)
 async def story(ctx):
 
-	possible_responses = ["כוחן של מילים - עידוד
+	possible_responses = ["""כוחן של מילים - עידוד
 
 להקה של צפרדעים טיילו להם ביער, לפתע נפלו שני צפרדעים לתוך בור עמוק מאוד. כל שאר הצפרדעים התגודדו יחד סביב הבור. כשהם ראו עד כמה הבור עמוק הם צעקו לצפרדעים שנפלו: 
 
@@ -204,7 +204,7 @@ async def story(ctx):
 
 3. עידוד זה כוח - לחצו כאן כדי ללמוד איך מעודדים 
 
-"]
+"""]
 
 	current_response = random.choice(possible_responses)
 
