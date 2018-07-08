@@ -133,8 +133,8 @@ async def say(output):
 
 
 @Client.command()
-async def info(ctx, message):
-        await Client.send_message(ctx.message.channel, """Hello! My name is MegaBot!
+async def info():
+        await Client.say("""Hello! My name is MegaBot!
 I have 3 types of commands:
 **Information Commands**
 **General Commands**
@@ -142,21 +142,20 @@ I have 3 types of commands:
 For see all the commands type: __+help__""")
 
 @Client.command()
-async def creator(ctx, message):
-        await Client.send_message(ctx.message.channel, """**My Creator Is MegaPig#1576!**
+async def creator():
+        await Client.say("""**My Creator Is MegaPig#1576!**
 __If you see bug in the bot say to him!__
 __And you can ask him for support!__""")
-        await Client.send_message(client.get_channel('log'), 'hello')
         await Client.add_reaction('\U0001F44D')
 
 @Client.command()
-async def invite(ctx, message):
-        await Client.send_message(ctx.message.channel, """https://discordapp.com/api/oauth2/authorize?client_id=459490391146627073&permissions=8&scope=bot
+async def invite():
+        await Client.say("""https://discordapp.com/api/oauth2/authorize?client_id=459490391146627073&permissions=8&scope=bot
 __You Can Invite Me When Ever You Want!__
 You Can Help If You Say Bugs To My Creator- **MegaPig#1576**""")
 
 @Client.command()
-async def help(ctx, message):
+async def help():
         embed = discord.Embed(title="Command List", description="""
 __**Information Commands**__
 **+info** - Small Information Of The Bot.
@@ -174,11 +173,11 @@ __**Staff Commands**__
 **+kick** @TAG - kick member (kick members permission)
 **+ban** @TAG - ban member (ban members permission)
 """, color=0xe88af4)
-        await Client.send_message(ctx.message.channel, embed=embed)
+        await Client.say(embed=embed)
 
 @Client.command()
-async def תצעק(ctx, message):
-         await Client.send_message(ctx.message.channel, "האהאהאההאהאהאהאהאהאהאהאאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאאהאההאהההאהאהאהאהאהאאהאהאהאהאהאהאאהאאאהאאאהאהאהאאהאההאהאאההאהאאהאהאהאהאאהאהאהאהאהאהאהאאהאהאהאהאהאאהאהאהאהאהאהאאהאהאהאהאאהאהאהאהאאהאהאהאהאהאהאהאהאההאההאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאהאהאאהאהאהאהאההאאהאהאהאהאהאהאהאהאהאהאאהאהאהאהאאההאאהאהאהאהאהאהאהאהאהאאאהאהאהאהאהאהאהאהאהאהה")
+async def תצעק():
+        await Client.say("האהאהאההאהאהאהאהאהאהאהאאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאאהאההאהההאהאהאהאהאהאאהאהאהאהאהאהאאהאאאהאאאהאהאהאאהאההאהאאההאהאאהאהאהאהאאהאהאהאהאהאהאהאאהאהאהאהאהאאהאהאהאהאהאהאאהאהאהאהאאהאהאהאהאאהאהאהאהאהאהאהאהאההאההאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאהאהאאהאהאהאהאההאאהאהאהאהאהאהאהאהאהאהאאהאהאהאהאאההאאהאהאהאהאהאהאהאהאהאאאהאהאהאהאהאהאהאהאהאהה")
 
 
                     
