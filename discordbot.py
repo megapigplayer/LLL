@@ -149,9 +149,7 @@ For see all the commands type: __+help__""")
 
 @Client.command()
 async def creator():
-        await Client.say("""**My Creator Is MegaPig#1576!**
-__If you see bug in the bot say to him!__
-__And you can ask him for support!__""")
+	embed.add_field(name="----", value="[invite me](https://discordapp.com/api/oauth2/authorize?client_id=459490391146627073&permissions=8&scope=bot)")
 
 @Client.command()
 async def invite():
@@ -199,6 +197,8 @@ async def randomtip(ctx):
 	current_response = random.choice(possible_responses)
 
 	await Client.say(current_response)
+			
+!
 	
 
 Client.run(os.getenv('TOKEN'))
