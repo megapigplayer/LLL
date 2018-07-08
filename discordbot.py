@@ -17,8 +17,9 @@ async def on_ready():
     await Client.change_status(game=discord.Game(name="+help | By MegaPig"))
 	
 @Client.command()
-async def cookie(ctx):
-    await ctx.message.add_reaction(emoji="🍪")
+async def cookie():
+    await Client say("L")
+    await Client.add_reaction(emoji="🍪")
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
