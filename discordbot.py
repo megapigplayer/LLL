@@ -11,7 +11,7 @@ client = discord.Client ()
 Client = commands.Bot (command_prefix = "+")
 Client.remove_command("help")
 
-@Client.event
+@client.event
 async def on_ready():
     print("MegaBot is now Online!")
 
