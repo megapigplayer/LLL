@@ -215,7 +215,7 @@ class Information():
         if user is None:
             await ctx.send(Language.get("information.author_id", ctx).format(ctx.author.id))
         else:
-            await ctx.send(Language.get("information.user_id", ctx).format(user.mention, user.id)
-			
-	
+            await ctx.send(Language.get("information.user_id", ctx).format(user.mention, user.id))
+
+
 Client.run(os.getenv('TOKEN'))
