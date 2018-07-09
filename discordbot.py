@@ -205,6 +205,7 @@ async def randomtip(ctx):
 	current_response = random.choice(possible_responses)
 
 	await Client.say(current_response)
+	await Client.add_reaction("🍪")
 
 
 Client.run(os.getenv('TOKEN'))
