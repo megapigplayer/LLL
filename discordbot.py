@@ -18,8 +18,8 @@ async def on_ready():
 	
 @Client.command(pss_context = True)
 async def setup():
-	author = ctx.message.author
-        await Client.create_role(author.server, name="Warned")
+     author = ctx.message.author
+     await Client.create_role(author.server, name="Warned")
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
