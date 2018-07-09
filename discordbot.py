@@ -154,7 +154,7 @@ __Thank you for invite me to your server!__
 you can help if you say bugs to my creator:
 **MegaPig#1576!**
 """, color=0xe88af4)
-        await Client.say(embed=embed)
+        await Client.say(embed)
 
 @Client.command()
 async def invite():
