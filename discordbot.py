@@ -205,18 +205,6 @@ async def randomtip(ctx):
 	current_response = random.choice(possible_responses)
 
 	await Client.say(current_response)
-	
-class Information():
-    def __init__(self, Client):
-        self.Client = Client
-
-    @Client.command()
-    async def id(self, ctx, user:discord.User=None):
-        """Gets your ID or if you @mention a user it gets their id"""
-        if user is None:
-            await ctx.send(Language.get("information.author_id", ctx).format(ctx.author.id))
-        else:
-            await ctx.send(Language.get("information.user_id", ctx).format(user.mention, user.id))
 
 
 Client.run(os.getenv('TOKEN'))
