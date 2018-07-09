@@ -149,12 +149,9 @@ For see all the commands type: __+help__""")
 
 @Client.command()
 async def creator():
-	embed = discord.Embed(title="My Creator Is MegaPig!", description="""
-__Thank you for invite me to your server!__
+	await Client.say("""__Thank you for invite me to your server!__
 you can help if you say bugs to my creator:
-**MegaPig#1576!**
-""", color=0xe88af4)
-        await Client.say(embed=embed)
+**MegaPig#1576!**""")
 
 @Client.command()
 async def invite():
