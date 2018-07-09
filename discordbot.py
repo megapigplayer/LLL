@@ -194,11 +194,12 @@ __**Staff Commands**__
         await Client.say(embed=embed)
 
 @Client.command()
-async def תצעק():
+async def תצעק()        
         await Client.say("האהאהאההאהאהאהאהאהאהאהאאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאאהאההאהההאהאהאהאהאהאאהאהאהאהאהאהאאהאאאהאאאהאהאהאאהאההאהאאההאהאאהאהאהאהאאהאהאהאהאהאהאהאאהאהאהאהאהאאהאהאהאהאהאהאאהאהאהאהאאהאהאהאהאאהאהאהאהאהאהאהאהאההאההאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאהאההאהאהאאהאהאהאהאההאאהאהאהאהאהאהאהאהאהאהאאהאהאהאהאאההאאהאהאהאהאהאהאהאהאהאאאהאהאהאהאהאהאהאהאהאהה")
 
 @Client.command(pass_context=True, emoji = "🍪")
 async def randomtip(ctx):
+        await emoji = ["🍪"]
 
 	possible_responses = ["אם אתה מרגיש טיפש ומאושר סימן שאתה מאוהב", "האהבה גורמת לעולם להסתובב, אבל צייסר יעשה גם את העבודה", "אם אתם מחפשים את האחד - הוא נמצא למעלה בצד השמאלי של המקלדת...", "תחייך והעולם יחייך אליך חזרה", "לעולם אל תפריע לאויב שלך כשהוא עושה טעות", "היופי הגדול של החיים אינו טמון בכך שלא ניפול, אלא בכך שנקום כל פעם מחדש", "אל תלכו להיכן שהדרך מובילה. לכו היכן שאין דרך, ותשאירו עקבות", "חיוך הוא קו עקום שמיישר את הכל - אז חייכו", "אם אתם יכולים לחלום על זה, אתם יכולים גם לעשות את זה", "הדלק לאדם מדורה וחיממת אותו ללילה, הצת באדם אש וחיממת אותו לכל החיים", "יש בחיים 2 חוקים: 1. אל תוותר בחיים 2. תמיד תזכור את חוק #1", "יש 7 מיליארד אנשים בעולם אל תתנו לאחד להרוס לכם את החיים", "גם בעיטה בתחת זה צעד אחד קדימה", "כל דקה של עצב היא שישים שניות של בזבוז שמחה"]
 
