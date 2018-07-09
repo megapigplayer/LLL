@@ -5,6 +5,24 @@ from discord.ext.commands import Bot
 import time
 import random
 import os
+import time
+import nmap
+import socket
+import pythonwhois
+
+#TODO: remove
+import traceback
+
+from discord.ext import commands
+from datetime import date
+from utils.tools import *
+from utils.logger import log
+from utils.config import Config
+from utils.unicode import *
+from PIL import Image
+from utils.language import Language
+from utils import checks
+config = Config()
 
 
 Client = commands.Bot(command_prefix = "+")
