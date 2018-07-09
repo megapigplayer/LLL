@@ -209,7 +209,7 @@ class Information():
     def __init__(self, Client):
         self.Client = Client
 
-    @commands.command()
+    @Client.command()
     async def id(self, ctx, user:discord.User=None):
         """Gets your ID or if you @mention a user it gets their id"""
         if user is None:
