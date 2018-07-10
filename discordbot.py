@@ -12,14 +12,13 @@ Client = commands.Bot(command_prefix = "+")
 Client.remove_command("help")
 owner = ["Insert-Owner-ID"]
 
-@Client.event
+@Client.event bn
 async def on_ready():
     print("Bot Is ready!")
     await Client.change_status(game=discord.Game(name="+help | By MegaPig"))
 	
 @Client.command(pass_context = True)
 async def setup():
-     author = ctx.message.author
      await Client.create_role(author.server, name="Warned")
 	
 
