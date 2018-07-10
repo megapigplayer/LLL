@@ -42,6 +42,8 @@ async def kick(ctx, userName: discord.User):
     else:
         embed=discord.Embed(title="You cant kick this user!", description="You don't have permission to use this command.", color=0xff00f6)
         await Client.say(embed=embed)
+	
+@Client.command(
 
 @Client.command(pass_context = True)
 async def warn(ctx, member: discord.Member):
@@ -139,7 +141,7 @@ async def say(output):
     await Client.say(output)
 
 @Client.command()
-async def game(ouput):
+async def game(output):
     await Client.change_status(game=discord.Game(name=output))
 	
 
