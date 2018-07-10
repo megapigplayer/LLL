@@ -25,7 +25,7 @@ async def setup():
 @Client.command(pass_context = True)
 async def emoji():
      if ctx.message.author.server_permissions.send_messages or ctx.message.author.id == '194151340090327041':
-	await Client.add_reaction("hello", 🍪)
+	await Client.add_reaction("🍪")
 	
 
 @Client.command(pass_context = True)
