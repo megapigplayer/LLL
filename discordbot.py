@@ -12,7 +12,7 @@ Client = commands.Bot(command_prefix = "+")
 Client.remove_command("help")
 owner = ["Insert-Owner-ID"]
 
-@Client.event bn
+@Client.event
 async def on_ready():
     print("Bot Is ready!")
     await Client.change_status(game=discord.Game(name="+help | By MegaPig"))
