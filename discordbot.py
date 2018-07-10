@@ -22,11 +22,6 @@ async def setup():
      author = ctx.message.author
      await Client.create_role(author.server, name="Warned")
 	
-@Client.command(pass_context = True)
-async def emoji():
-     if ctx.message.author.server_permissions.send_messages or ctx.message.author.id == '194151340090327041':
-	await Client.add_reaction('🍪')
-	
 
 @Client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
