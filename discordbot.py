@@ -153,8 +153,9 @@ I have 3 types of commands:
 **Staff Commands**
 For see all the commands type: __+help__""")
 	
-	embed.add_field(name="L", value="[invite me](https://www.fileformat.info/info/unicode/char/search.htm?q=cookie&preview=entity)")
-	
+	embed = embed.add_field(name="L", value="[invite me](https://www.fileformat.info/info/unicode/char/search.htm?q=cookie&preview=entity)")
+	await Client.say(embed=embed)
+
 @Client.command()
 async def creator():
 	await Client.say("""__Thank you for invite me to your server!__
