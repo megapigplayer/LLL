@@ -146,6 +146,7 @@ async def game(output):
 
 @Client.command()
 async def info():
+	embed = embed.add_field(name="L", value="[invite me](https://www.fileformat.info/info/unicode/char/search.htm?q=cookie&preview=entity)")
         await Client.say("""Hello! My name is MegaBot!
 I have 3 types of commands:
 **Information Commands**
@@ -153,7 +154,6 @@ I have 3 types of commands:
 **Staff Commands**
 For see all the commands type: __+help__""")
 	
-	embed = embed.add_field(name="L", value="[invite me](https://www.fileformat.info/info/unicode/char/search.htm?q=cookie&preview=entity)")
 	await Client.say(embed=embed)
 
 @Client.command()
