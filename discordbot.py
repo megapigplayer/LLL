@@ -47,10 +47,10 @@ async def kick(ctx, userName: discord.User):
 @Client.command(pass_context = True)
 async def warn(ctx, member: discord.Member):
      if ctx.message.author.server_permissions.move_members or ctx.message.author.id == '194151340090327041':
-        role = discord.utils.get(member.server.roles, name='Warn')
-        await Client.add_roles(member, role)
         embed=discord.Embed(title="User Warned!", description="**{0}** was warned by **{1}**!".format(member, ctx.message.author), color=0xff00f6)
         await Client.say(embed=embed)
+        role = discord.utils.get(member.server.roles, name='Warn')
+        await Client.add_roles(member, role)
      else:
         embed=discord.Embed(title="You cant warn this user!", description="You don't have permission to use this command.", color=0xff00f6)
         await Client.say(embed=embed)
