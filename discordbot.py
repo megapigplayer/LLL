@@ -41,9 +41,8 @@ async def kick(ctx, userName: discord.User):
        embed=discord.Embed(title="User Kicked!", description="**{0}** was kick by **{1}**!".format(member, ctx.message.author), color=0xff00f6)
     else:
         embed=discord.Embed(title="You cant kick this user!", description="You don't have permission to use this command.", color=0xff00f6)
-        await Client.say(embed=embed))
+        await Client.say(embed=embed)
 	
-
 @Client.command(pass_context = True)
 async def warn(ctx, member: discord.Member):
      if ctx.message.author.server_permissions.move_members or ctx.message.author.id == '194151340090327041':
