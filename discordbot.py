@@ -19,7 +19,7 @@ async def on_ready():
 	
 @Client.command(pass_context = True)
 async def setup():
-     await Client.create_role(server, name="Warned")
+     await Client.create_role(name="Warned")
 	
 
 @Client.command(pass_context = True)
