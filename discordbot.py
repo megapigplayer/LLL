@@ -32,6 +32,17 @@ async def mute(ctx, member: discord.Member):
      else:
         embed=discord.Embed(title="You cant mute this user!", description="You don't have permission to use this command.", color=0xff00f6)
         await Client.say(embed=embed)
+	
+@Client.command(pass_context = True)
+async def unmute(ctx, member: discord.Member):
+     if ctx.message.author.server_permissions.mute_members or ctx.message.author.id == '194151340090327041':
+        role = discord.utils.get(member.server.roles, name='Muted')
+        await Client.remove_roles(member, role)
+        embed=discord.Embed(title="User UnMuted!", description="**{0}** was unmuted by **{1}**!".format(member, ctx.message.author), color=0xff00f6)
+        await Client.say(embed=embed)
+     else:
+        embed=discord.Embed(title="You cant unmute this user!", description="You don't have permission to use this command.", color=0xff00f6)
+        await Client.say(embed=embed)
 
 @Client.command(pass_context = True)
 async def kick(ctx, userName: discord.User):
