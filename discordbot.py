@@ -193,11 +193,12 @@ __**General Commands**__
 
 __**Staff Commands**__
 
-**+warn** @TAG- warn member (move members permission)
-**+mute** @TAG- mute member (mute members permission)
-**+clear (2-100)** - clear messages (manage_messages permission)
-**+kick** @TAG - kick member (kick members permission)
-**+ban** @TAG - ban member (ban members permission)
+**+warn @TAG** - warn member (move members permission only)
+**+mute @TAG** - mute member (mute members permission only)
+**+unmute @TAG** - unmute member (mute members permission only) 
+**+clear (2-100)** - clear messages (manage messages permission only)
+**+kick** @TAG - kick member (kick members permission only)
+**+ban** @TAG - ban member (ban members permission only)
 """, color=0xe88af4)
         await Client.say(embed=embed)
 
