@@ -157,14 +157,14 @@ async def game(output):
 async def info():
         embed = discord.Embed(title="Bot Information", description="""
 __Hello! My Name is MegaBot#7137!__
-☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
 **My prefix is +**
 **For see the list of command do:**
 ```+help```
 **For see who my creator do:**
 ```+creator```
 **My Support server coming soon!
-☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
 """, color=0xe88af4)
         await Client.say(embed=embed)
 
