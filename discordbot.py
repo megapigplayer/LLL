@@ -164,7 +164,7 @@ __Hello! My Name is MegaBot#7137!__
 ```+help```
 **For see who my creator do:**
 ```+creator```
-**My Support server coming soon!**
+My Support server coming soon!
 ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
 """, color=0xe88af4)
         await Client.say(embed=embed)
