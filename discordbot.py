@@ -157,6 +157,7 @@ async def game(output):
 async def info():
         embed = discord.Embed(title="Bot Information", description="""
 __Hello! My Name is MegaBot#7137!__
+
 ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
 **My prefix is +**
 **For see the list of command do:**
